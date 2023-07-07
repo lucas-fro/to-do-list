@@ -4,7 +4,7 @@ function Adicionar() {
     var inputProduto = document.getElementById('produto');
     var Produto = inputProduto.value.trim();
 
-    if (valorProduto !== '') {
+    if (Produto !== '') {
         var li = document.createElement('li');
 
         var checkbox = document.createElement('input');
@@ -18,11 +18,11 @@ function Adicionar() {
         }
 
         li.appendChild(checkbox)
-        li.appendChild(document.createTextNode(Produto));
+        li.appendChild(document.createTextNode(Produto + '.'));
 
         ul.appendChild(li);
 
-        produto.value = '';
+        inputProduto.value = '';
     }
 }
 
