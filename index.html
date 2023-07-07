@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to-do-list</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <main>
+        <div class="card">
+            <h1>Listagem de itens</h1>
+            <p>adicione um item a lista</p>
+
+            <div class="lineInput">
+                <label for="produto">Adicinar produto:</label>
+                <input type="text" id="produto">
+            </div>
+            <button id="btnAdd" onclick="Adicionar()">ADICIONAR</button>
+            <button id="btnRmv" onclick="Limpar()">LIMPAR LISTA</button>
+        </div>
+        <ul id="ul"></ul>
+    </main>
+    <script src="assets/script.js"></script>
+</body>
+</html>
