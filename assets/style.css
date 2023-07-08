@@ -38,12 +38,14 @@ main{
 
 .lineInput input{
     width: 100%;
+    height: 35px;
     padding: 5px 10px;
     font-size: 1.2rem;
     border-radius: 5px;
     box-shadow: 1px 1px 5px #0000003e;
     border: none;
     outline: none;
+    box-sizing: border-box;
 }
 
 button{
