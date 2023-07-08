@@ -48,7 +48,7 @@ main{
     box-sizing: border-box;
 }
 
-button{
+#btnAdd, #btnRmv{
     padding: 10px 20px;
     border-radius: 5px;
     color: #fff;
@@ -116,4 +116,17 @@ li{
 
 input[type=checkbox]{
     margin-right: 10px;
+}
+
+.btnExcluir{
+    float: right;
+    font-size: 1.1rem;
+    box-sizing: border-box;
+    padding: 3px 2px 1px;
+    background-color: #d00000;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+
 }

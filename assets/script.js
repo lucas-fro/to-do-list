@@ -16,13 +16,24 @@ function Adicionar() {
                 li.classList.remove('checked');
             }
         }
+        
+        let btnExclir = document.createElement('button');
+        btnExclir.classList.add('btnExcluir');
+        btnExclir.innerHTML = '<i class="bi bi-trash"></i>';
+        btnExclir.onclick = () => {
+            li.remove();
+        }
 
+       
         li.appendChild(checkbox)
         li.appendChild(document.createTextNode(Produto + '.'));
+        li.appendChild(btnExclir);
 
         ul.appendChild(li);
 
         inputProduto.value = '';
+    }else{
+        alert('Preencha o campo');
     }
 }
 
