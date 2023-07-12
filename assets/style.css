@@ -12,6 +12,10 @@ main{
     padding: 30px;
 }
 
+button, input[type="checkbox"] {
+    cursor: pointer;
+}
+
 .card{
     background-color: #fff;
     border-radius: 10px;

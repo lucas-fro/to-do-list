@@ -1,5 +1,12 @@
 var ul = document.getElementById('ul');
 
+document.addEventListener('keydown', function(event) {
+    if (event.key == 'Enter') {
+      var button = document.getElementById('btnAdd');
+      button.click();
+    }
+  });
+
 function Adicionar() {
     var inputProduto = document.getElementById('produto');
     var Produto = inputProduto.value.trim();
